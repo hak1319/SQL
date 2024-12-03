@@ -103,6 +103,7 @@
     
 
 * 테이블 변경 명령 -> ALTEAR TABLE 테이블명 MODIFY,ADD,CHANGE,DROP COLUMN ~~
+* ALTER TABLE [원본 테이블] RENAME TO [바꾸려는 테이블명]
  - 테이블에 새로운 컬럼 추가 <br>
  ```sql
  문법: ALTER TABLE [테이블명] ADD COLUMN [추가할 컬럼명][추가할 컬럼 데이터형] 
