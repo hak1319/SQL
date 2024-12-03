@@ -349,7 +349,7 @@ for page_num in range(10):
         00 = 00.00('00').get_text().replace('000','').strip()#없애는과정.
         00 = 00.select_one('00').get_text().replace('00:','').strip()
         print(category,product)
-        SQL ="""INSERT INTO 00 (00,00) VALUES('"""+00+"""','"""+00+"""');"""
+        SQL ="""INSERT INTO 00 (00,00) VALUES('00','00');""" #지정된 타입에 맞는 값
         print(SQL)
         cursor.execute(SQL)
         
