@@ -330,9 +330,9 @@ import pymysql
 db = pymysql.connect(
         host='localhost', # 127.0.0.1 , 0.0.0.0 
         port=3306, 
-        user='root', # root
-        passwd='', 
-        db='', 
+        user='이름', # root
+        passwd='패스워드', 
+        db='연결할 데이터베이스 명', 
         charset='utf8')
 cursor = db.cursor()
 import requests
