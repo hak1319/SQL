@@ -28,7 +28,7 @@
 * 관계형 데이터베이스 관리 시스템에서 데이터를 관리하기 위해 사용되는 표준 프로그래밍 언어
   * 데이터 정의 언어(DDL, Data Definition Language) : 데이터 구조 정의
     * 테이블, 인덱스 등의 개체를 만들고 관리하는데 사용되는 명령
-  * 데이터 처리 언어 (dml)
+  * 데이터 처리 언어 (DML)
     * 데이터 CRUD(create생성,read읽기,update갱신,delete삭제)
   * 데이터 제어 언어
         * 테이블 (Table) = 관계(Relation)
@@ -38,7 +38,7 @@
 ### * 숫자함수
         * ROUND() 반올림
         * CEIL(): 올림
-        * FLOOR : 반올림
+        * FLOOR : 내림
         * ABS () : 절대값
         * GREAST (): 괄호안에서 제일 큰값
         * LEAST() : 괄호안에서 가장 작은값
@@ -110,7 +110,7 @@ mysql> ALTER TABLE mytable ADD COLUMN model_type varchar(10) NOT NULL;
  ```
  - 테이블 컬럼 타입 변경
  ```sql
-문법: ALTER TABLE [테이블명] CHANGE COLUMN [기존 컬럼 명][변경할 컬럼 명][변경할 컬럼 타입]
+문법: ALTER TABLE [테이블명] MODIFY COLUMN [칼럼명][변경할 컬럼 타입]
 mysql>ALTER TABLE mytable CHANGE COLUMN modelnumber model_num varchar(10) NOT NULL;
 ```
  - 테이블 컬럼 이름 변경
