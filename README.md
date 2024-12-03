@@ -130,7 +130,7 @@ mysql>ALTER TABLE mytable DROP COLUMN series;
       * 테이블 전체 칼럼에 대응하는 값을 모두 넣기
       * INSERT INTO 테이블명 VALUES(값 1,값2....)  -> 컬럼에 해당하는 것들전부 넣어야되지만
       * 테이블 특정 컬럼에 대응하는 값만 넣기
-      * INSERT INTO 테이블명 (col1,col2,...) VALUES(값1,값2,...) col1 값 1 대응, 값을 추가할때 추가하고 싶은 컬럼에만 넣으면댐
+      * INSERT INTO 테이블명(col1,col2,...) VALUES (값1,값2,...) col1 값 1 대응, 값을 추가할때 추가하고 싶은 컬럼에만 넣으면댐
   ```
 * **데이터 읽기(검색) SELECT**
         * 테이블 전체 컬럼의 데이터 모두 읽기
