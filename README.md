@@ -306,6 +306,13 @@ for i in range(10):
     print(SQL)
     cursor.execute(SQL) # 실행
 ```
+* ```python
+    sql = """
+    UPDATE Products SET stockQuantity = stockQuantity - %s
+    WHERE productID = %s 
+    """
+    cursor.execut(sql,(10,3))# 10개를 빼줘 아이디가 3번인 것에대헤
+ ```
 * 데이트 조회 코드 (SELECT) 
  - fetchall() : 쿼리 결과의 모든행 , 결과는 튜플로 반환 ,각내부 튜플은 하나의 레코드 반환
  - fetchone() : 한줄, 실행될때마다 다음줄로 넘어가서 반환 , 끝나면 None
