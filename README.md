@@ -328,12 +328,12 @@ for i in range(10):
 import pymysql
 
 db = pymysql.connect(
-    host='localhost', # 127.0.0.1 , 0.0.0.0 
-    port=3306, 
-    user='root', # root
-    passwd='', 
-    db='', 
-    charset='utf8')
+        host='localhost', # 127.0.0.1 , 0.0.0.0 
+        port=3306, 
+        user='root', # root
+        passwd='', 
+        db='', 
+        charset='utf8')
 cursor = db.cursor()
 import requests
 from bs4 import BeautifulSoup
